@@ -89,3 +89,13 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
