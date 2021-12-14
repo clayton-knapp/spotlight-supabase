@@ -25,7 +25,7 @@ export function renderPreampCard(eachPreamp) {
 
     for (let i = 0; i < eachPreamp.reviews.length; i++){
         const reviewP = document.createElement('p');
-        reviewP.textContent = eachPreamp.reviews[i];
+        reviewP.textContent = 'Review: ' + eachPreamp.reviews[i];
         reviewsDiv.append(reviewP);
     }
 
@@ -44,7 +44,7 @@ export function renderCompressorCard(eachCompressor) {
 
     makeModelP.textContent = eachCompressor.make_model;
     typeP.textContent = eachCompressor.type;
-    ownerIDP.textContent = "Owner ID: " + eachCompressor.owner_id;
+    ownerIDP.textContent = "Owner ID: " + eachCompressor.owner_id.name;
 
     div.classList.add('card');
 

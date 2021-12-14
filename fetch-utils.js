@@ -26,8 +26,9 @@ export async function fetchPreamps(){
 export async function fetchCompressors(){
     const request = await client
         .from('compressors')
-        .select();
-    // console.log(request.data);
+        .select(`*, 
+        owner_id(*)`);
+    console.log(request.data);
 
     return request.data;
 }
@@ -36,7 +37,7 @@ export async function fetchOwners(){
     const request = await client
         .from('studio_owners')
         .select();
-    console.log(request.data);
+    // console.log(request.data);
 
-    return request.data;;
+    return request.data;
 }
