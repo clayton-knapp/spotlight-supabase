@@ -28,7 +28,7 @@ export async function fetchCompressors(){
         .from('compressors')
         .select(`*, 
         owner_id(*)`);
-    console.log(request.data);
+    // console.log(request.data);
 
     return request.data;
 }

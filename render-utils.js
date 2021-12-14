@@ -44,7 +44,7 @@ export function renderCompressorCard(eachCompressor) {
 
     makeModelP.textContent = eachCompressor.make_model;
     typeP.textContent = eachCompressor.type;
-    ownerIDP.textContent = "Owner ID: " + eachCompressor.owner_id.name;
+    ownerIDP.textContent = 'Owner ID: ' + eachCompressor.owner_id.name;
 
     div.classList.add('card');
 
